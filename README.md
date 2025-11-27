@@ -128,3 +128,12 @@ Counter automatically counts repeated elements.
 I pass a list of words into Counter.
 It returns a dictionary-like object with word counts.
 
+Write a function to generate Fibonacci sequence.
+
+
+def fibonacci(n):
+    a, b = 0, 1
+    for i in range(n):
+        print(a, end=" ")
+        a, b = b, a + b
+
