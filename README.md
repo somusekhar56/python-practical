@@ -6,7 +6,8 @@ A function is a block of reusable code that performs a specific task.It helps av
 def add(a, b):
     return a + b
 
-def function_name(parameters):      (syntax)
+def function_name(parameters):
+
     return value
     
 # modules
@@ -57,25 +58,33 @@ print(check(7))
 # Write a lambda function to add two numbers and print the result.
 
 a = lambda a,b : a+b
+
 print(a(10,20))
 
 # Find the largest of three numbers using lambda
 
 largest = lambda a, b, c: max(a, b, c)
+
 print(largest(10, 25, 15))  # Output: 25
 
 # find the square of a number using lambda
 
 square =  lambda x:x**2
+
 print(square(9))
 
 # Reverse a string without using slicing.
 
 text = "hello"
+
 rev = ""
+
 for ch in text:
-    rev = ch + rev     
+
+    rev = ch + rev 
+    
 print(rev)
+
 We take an empty string rev.
 ✔ We loop through each character in the original string.
 ✔ Instead of adding characters at the end,
