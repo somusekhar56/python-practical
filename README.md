@@ -219,5 +219,10 @@ print(total)
 # What is a User-Defined Function?
 “A UDF is a function created by the programmer using the def keyword. It helps avoid repeated code, improves readability, and makes programs modular.”
 
+def function_name(parameters):
+    return value
+
+
+
 
 
