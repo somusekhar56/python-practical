@@ -164,6 +164,9 @@ def gen_nums():
 
 for n in gen_nums():
     print(n)
+2nd way
+    for i in range(1, 6):
+    print(i)
     
 # What is an Iterator?
 An iterator is an object in Python that allows you to loop through a sequence (like list, tuple, string) one item at a time.
