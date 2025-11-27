@@ -27,6 +27,13 @@ print(add_numbers(10, 20, 30))  out put 60
 def greet(name):
     return f"Hello, {name}!"
 print(greet("Alice")) out put hello,alice!
+2 nd way
+def greet(name):
+
+    print("Hello", name)
+
+greet("Alice")
+
 
 # What is **kwargs in Python?
 **kwargs allows a function to accept any number of keyword arguments.We use it when we want to pass data in key-value pairs.
