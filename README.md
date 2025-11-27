@@ -137,3 +137,77 @@ def fibonacci(n):
         print(a, end=" ")
         a, b = b, a + b
 
+# What is a decorator?
+A decorator is a function that modifies the behavior of another function without changing its actual code.
+# Why Are Decorators Used?
+Logging ,Authentication,Performance measurement,Access control,Input validation
+
+
+# What is a generator?
+A generator is a function that yields values one by one using yield instead of return.
+
+# yield pauses and resumes the function saving memory;
+# return ends the function immediately.
+
+# Write a generator to produce numbers from 1 to 5.
+
+def gen_nums():
+    for i in range(1, 6):
+        yield i
+
+for n in gen_nums():
+    print(n)
+    
+# What is an Iterator?
+An iterator is an object in Python that allows you to loop through a sequence (like list, tuple, string) one item at a time.
+
+An iterator must implement two methods:
+
+ __iter__() → returns the iterator object
+ __next__() → returns the next value; raises StopIteration when finished
+
+#  What is a lambda function?
+ A lambda function is an anonymous, one-line function created using the lambda keyword.
+
+# Use lambda with map() to add 10 to each number in a list.(square numbers, uppercase)
+map() is used when we want to transform each element in a list."
+
+nums = [1, 2, 3]
+
+result = list(map(lambda x: x + 10, nums))
+
+print(result)  
+
+# Use lambda with filter() to get only even numbers. even numbers
+filter() keeps ONLY those items for which the function returns True. "filter() is used to filter items from a list based on a condition.
+
+nums = [1, 2, 3, 4, 5, 6]
+
+evens = list(filter(lambda x: x % 2 == 0, nums))
+
+print(evens)
+
+# Filter names starting with 'A'
+
+names = ["Arun", "Bob", "Akhil", "John"]
+
+result = list(filter(lambda x: x.startswith('A'), names))
+
+print(result)
+
+# reduce()
+reduces a list into a single value. reduce() applies a function cumulatively and collapses the list into one result (like sum, product, max)."
+Sum of all numbers
+from functools import reduce
+
+nums = [1, 2, 3, 4]
+
+total = reduce(lambda a, b: a + b, nums)
+
+print(total)
+
+# What is a User-Defined Function?
+“A UDF is a function created by the programmer using the def keyword. It helps avoid repeated code, improves readability, and makes programs modular.”
+
+
+
